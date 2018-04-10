@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-savofflite-sqlite"
+        version="1.0.2">
+
+  <name>Savofflite</name>
+
+<!--   <engines>
+    <engine name="cordova-android" version=">=6.3.0" />
+  </engines> -->
+
+  <asset src="www/savofflite.js" target="js/savofflite.js"/>
+  <asset src="www/pouchdb.min.js" target="js/pouchdb.min.js"/>
+
+  <js-module src="www/savofflite.js" name="savofflite">
+     <!-- <clobbers target="savofflite" /> -->
+  </js-module>
+
+  <js-module src="www/pouchdb.min.js" name="pouchdb">
+  </js-module>
+
+  <dependency id="cordova-sqlite-storage" version="2.3.0" />
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Savofflite">
+        <param name="android-package" value="com.neutrinos.plugin.Savofflite"/>
+      </feature>
+    </config-file> 
+  </platform>
+
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Savofflite">
+        <param name="ios-package" value="Savofflite" />
+      </feature>
+    </config-file>
+  </platform>
+
+</plugin>

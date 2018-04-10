@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-savofflite-sqlite",
+  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisTomAlx/cordova-plugin-savofflite-sqlite.git"
+  },
+  "cordova": {
+    "id": "cordova-plugin-savofflite-sqlite",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "pouchdb",
+    "savofflite",
+    "ofline storage",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "sqlite"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "cordova-android": ">=6.3.0",
+      "cordova-ios": ">=4.5.4"}
+  },
+  "author": "jatahworx",
+  "license": "ISC",
+  "description": "cordova plugin for offline sqlite storage using pouchdb"
+}
